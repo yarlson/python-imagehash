@@ -8,7 +8,7 @@ RUN export DEBIAN_FRONTEND=noninteractive ;\
     pip install --upgrade pip ;\
     pip install --no-cache-dir numpy==1.14.3 pandas==0.22.0 ;\
     pip install --no-cache-dir scipy==1.1.0 imagehash==3.7 ;\
-    apt-get remove libblas-dev liblapack-dev libgfortran-4.9-dev -y ;\
+    pip install --no-cache-dir gevent==1.1.2 gunicorn==19.3.0 ;\
     apt-get clean ;\
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
