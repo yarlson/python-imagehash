@@ -1,4 +1,4 @@
-FROM pypy:2-5.10.0
+FROM python:3.6.5-jessie
 
 MAINTAINER Yar Kravtsov <yarlson@gmail.com>
 
